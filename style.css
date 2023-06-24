@@ -1,0 +1,704 @@
+/* .content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 4fr 2fr 3fr 3fr 3fr 3fr 3fr 3fr 2fr 4fr ;
+}
+
+.header{
+    display: grid;
+    grid-column: 1/4;
+    width: 100%;
+}
+
+.img-principal{
+    display: grid;
+    grid-column: 1/4;
+}
+
+section
+{
+    display: grid;
+    grid-column: 1/4;
+}
+
+footer
+{
+    display: grid;
+    grid-column: 1/4;
+}
+ 
+
+*/
+/* Tamaño de las imagenes*/
+
+/*
+.logo-web {
+
+    width: 2px;
+    height: 2px;
+}
+
+.menu {
+    width: 2px;
+    height: 2px;
+}
+
+.img-principal{
+
+    width: 100%;
+}
+
+*/
+
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+}
+
+@font-face {
+  font-family: ;
+  src: url(font/FreeSans.ttf) format(truetype);
+}
+.content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  max-width: 100%;
+}
+
+.navigation-principal {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.logo-web {
+  margin: auto 8em auto 0px;
+  grid: 1;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.list button {
+  padding: 1em 3em;
+  border-radius: 1em;
+  margin: 1em 0.8em;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.list button a {
+  text-decoration: none;
+  color: white;
+}
+
+.list li {
+  list-style: none;
+}
+.logo-web {
+  width: 5em;
+  justify-items: flex-start;
+}
+
+.navigation-principal {
+  max-width: 100%;
+  height: 5em;
+}
+
+.header-img img {
+  max-width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.h1-title {
+  position: relative;
+  text-align: center;
+  margin: 1.5em 1em;
+  color: white;
+  font-size: 10em;
+}
+
+.letras-1 {
+  max-width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 18em;
+  margin-bottom: 5em;
+  font-size: 2em;
+}
+
+.carrusel-product {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.carrusel-product p {
+  text-align: center;
+}
+
+
+/*
+
+Carrosel primero
+*/
+
+.slider-wrap {
+  position: relative;
+  overflow: hidden;
+    height: 396px;
+}
+
+.slider-main {
+  position: absolute;
+  width: 200%;
+  cursor: pointer;
+
+}
+
+.muestra{
+  width:  227px;
+  display: inline-block;
+  position: relative;
+  height: 100px;
+}
+
+.text {
+  position: absolute;
+}
+
+
+.muestra img {
+  width: 100%;
+  object-fit: cover;
+  transition: img 0.5s;
+}
+
+.muestra p {
+  text-align: center;
+}
+
+.trans:focus {
+  content: "";
+  transition: img 0.6s;
+}
+
+
+.button__prev{
+
+  position: absolute;
+  z-index: 2;
+  padding: 13em 2em;
+  margin-top:1em;
+  background: transparent;
+  cursor: pointer;
+  background-color: rgba(240, 240, 240, 1);
+  opacity: 0.3;
+}
+
+.button__next {
+
+  position: absolute;
+  z-index: 2;
+  padding: 13em 2em;
+  margin-top:1em;
+  right: 0em;
+  background-color: rgba(240, 240, 240, 1);
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+
+.carrusel-product-2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.carrusel-product-2 p {
+  text-align: center;
+}
+
+.carrusel-product-2 img {
+  max-width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.carrusel-product-3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.carrusel-product-3 p {
+  text-align: center;
+}
+
+.carrusel-product-3 img {
+  max-width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.title-2-colection {
+  font-size: 3em;
+  margin: 1em;
+  text-align: center;
+}
+
+.button-all-products {
+  text-align: center;
+  max-width: 100%;
+  padding: 0.5em 5em;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  font-size: 1em;
+  box-sizing: border-box;
+  margin: 5% 35%;
+}
+
+.carrusel-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.letras-1-title {
+  font-size: 3em;
+  margin: 1em;
+  text-align: center;
+}
+.carrusel-1 img {
+  max-width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.carrusel-2 img {
+  max-width: 100%;
+}
+
+.carrusel-3 img {
+  max-width: 100%;
+}
+
+.reviews {
+  max-width: 100%;
+  margin: 7em;
+}
+.title-reviews {
+  font-size: 3em;
+}
+.grid-reviews {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.box {
+  background-color: rgba(45, 235, 118, 0.2);
+  max-width: 100%;
+  height: 20em;
+  border-radius: 15%;
+  margin: 2em;
+}
+
+.box p {
+  text-align: left;
+  margin: 10%;
+  font-size: 2em;
+}
+
+.select-product {
+  max-width: 100%;
+  height: 90 em;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  margin-bottom: 8em;
+}
+
+.select-product a {
+  margin-top: 2em;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.select-product h2 {
+  font-size: 3em;
+}
+.suscript {
+  height: 43 em;
+}
+.suscript img {
+  width: 2em;
+}
+
+.suscript {
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 10%;
+  border-radius: 4%;
+  height: 20em;
+}
+
+.suscript {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.suscript {
+  text-align: center;
+}
+
+.imail {
+  width: 40%;
+  height: 3em;
+}
+.button-imail {
+  padding: 0.8em 4em;
+}
+.socialmedia {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.socialmedia p {
+  margin-bottom: 1em;
+}
+
+.title-suscript {
+  font-size: 3em;
+  margin: 1em;
+}
+
+.red {
+  margin: 0px 20%;
+  max-width: 100%;
+}
+.footer-all {
+  height: 123 em;
+}
+
+.title-final {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.description p {
+  text-align: left;
+  font-size: 2em;
+}
+
+.nav-bottom {
+  display: grid;
+  grid-template-columns: auto;
+}
+.title-nav-bottom {
+  font-size: 2em;
+  margin: 3em 0px;
+}
+
+.nav-bottom a {
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+
+.footer-really {
+  text-align: center;
+}
+
+.footer-all {
+  margin: 2em;
+}
+
+.footer-all img {
+  width: 5em;
+}
+
+.footer-right {
+  margin: 2em;
+}
+/*
+
+ACOMODANDO CAJAS DENTRO
+
+*/
+
+.navigation-principal {
+  display: flexbox;
+  justify-content: center;
+}
+
+.navigation {
+  display: flexbox;
+  justify-items: center;
+}
+
+header {
+  margin-bottom: 2em;
+  box-sizing: border-box;
+}
+
+/*  PAGE HTML IN KINDLES
+
+*/
+
+.readers h2 {
+  font-size: 6em;
+}
+
+.readers p {
+  text-align: left;
+  margin: 2em;
+  font-size: 2em;
+  margin: 2em;
+}
+
+.readers {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.title-readers {
+  margin: 2em;
+  font-size: 20em;
+}
+
+header {
+  width: 100%;
+}
+
+.kindles-products img {
+  max-width: 100%;
+  height: 25em;
+}
+
+.kindles-products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.content-kindles {
+  width: 100%;
+}
+
+.kindles-products {
+  margin: auto;
+}
+
+.kindles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: space-between;
+  margin: 3em 1em;
+}
+
+.kindles h2 {
+  font-size: 2em;
+}
+
+.kindles p {
+  font-size: 1.5em;
+}
+
+.kindles button {
+  display: grid;
+  width: 70%;
+  margin: 2em;
+  padding: 1em 4em;
+  background: rgba(233, 181, 110, 0.3);
+}
+
+.monto {
+  width: 100%;
+  height: auto;
+}
+
+.explication {
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 40em;
+  margin: 4em;
+  border-radius: 2em;
+}
+
+.explication h2 {
+  font-size: 3em;
+  margin: 2em;
+  text-align: center;
+}
+
+.explication p {
+  font-size: 1.5em;
+  margin: 2em;
+}
+
+.explication ol {
+  margin: 2em;
+}
+
+/* PAGE ACCESORIES*/
+
+.header-accesories {
+  max-width: 100%;
+  margin: 0.5em;
+  border-radius: 5%;
+
+  height: 40em;
+}
+
+.header-accesories {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.title2 {
+  font-size: 6em;
+  text-align: center;
+  margin: 2em;
+}
+
+.content-header-2 p {
+  text-align: left;
+  margin: 2em;
+  font-size: 2em;
+  margin: 2em;
+}
+
+.accesories-all {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 8em 0 8em 0;
+  grid-template-rows: auto auto;
+}
+
+.accesories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 1.5em;
+}
+
+.accesories-all img {
+  max-width: 100%;
+  height: 40%;
+}
+
+.accesories p {
+  margin: 0.5em;
+  font-size: 1.5em;
+}
+
+.accesories-all button {
+  width: 65%;
+  height: 4em;
+  background: rgba(233, 181, 110, 0.3);
+}
+
+.accesories-all a {
+  text-decoration: none;
+}
+
+/* PAGE ABOUT */
+
+.content-about {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.title-about-h2 {
+  font-size: 6em;
+  margin: 0.5em;
+}
+
+.content-about p {
+  margin: 0.5em;
+  font-size: 1.5em;
+}
+
+.content-about img {
+  max-width: 80%;
+  height: 30em;
+  margin: 4em;
+}
+
+.content-about {
+  margin: 4.5em;
+}
+
+.title-about-1 {
+  font-size: 6em;
+  margin: 1em;
+  text-align: center;
+}
+
+.img-about-principal {
+  max-width: 100%;
+  margin: 2em;
+}
+
+.header-about {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+/*  PAGE CONTACT*/
+
+.content-contact {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 4em;
+}
+
+.box-direction {
+  max-width: 100%;
+  margin: 4em;
+}
+
+.box-direction p {
+  margin: 0.5em;
+  font-size: 1.5em;
+}
+
+.box-input-email {
+  max-width: 100%;
+  height: auto;
+  margin: 2em 8em;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.box-text-area {
+}
+
+.header-contact h2 {
+  font-size: 6em;
+  margin: 0.5em;
+  text-align: center;
+}
+
+.email-h2 {
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+.box-input-email button {
+  padding: 1em;
+}
+
+.box-input-email input {
+  margin: 1em;
+}
+
+.box-input-email p {
+  margin: 0.5em 0.2em;
+  font-size: 1.2em;
+}
